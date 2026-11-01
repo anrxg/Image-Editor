@@ -1,5 +1,8 @@
 # 📸 Web-Based Image Editor
 
+![Image Editor Preview](./assets/ss1.png)
+![Image Editor Preview](./assets/ss2.png)
+
 A sleek, responsive, and client-side photo editing web application built with **Vanilla JavaScript**, **HTML5 Canvas API**, and **CSS3**. It enables users to apply real-time adjustments, switch between curated aesthetic presets, and download high-resolution edited images directly from the browser.
 
 ---
