@@ -1,0 +1,45 @@
+:root {
+    /* bg colors */
+    --bg-primary-color: rgb(21, 20, 20);
+    --bg-secondary-color: rgb(78, 68, 68);
+    --bg-active-color: rgb(233, 233, 233);
+    --bg-danger-color: rgb(106, 13, 13);
+    --bg-success-color: rgb(37, 140, 0);
+
+    /* font colors */
+    --font-primary-color: rgb(237, 237, 237);
+    --font-secondary-color: rgb(200, 200, 200);
+    --font-tertiary-color: rgb(150, 150, 150);
+    --font-active-color: rgb(21, 21, 21);
+    /*Padding variables */
+    --padding-s: .5em;
+    --padding-m: 1rem;
+    --padding-l: 1.5rem;
+    --padding-xl: 2rem;
+    --padding-xxl: 3rem;
+
+    /* gutters */
+    --gutter-s: .5em;
+    --gutter-m: 1rem;
+    --gutter-l: 1.5rem;
+    --gutter-xl: 2rem;
+    --gutter-xxl: 3rem;
+
+    /* font size */
+    --font-s: 0.875rem;
+    --font-m: 1rem;
+    --font-l: 1.125rem;
+    --font-xl: 1.25rem;
+    --font-xxl: 1.5rem;
+
+    /* border radius */
+    --border-radius-s: 0.2rem;
+    --border-radius-m: 0.25rem;
+    --border-radius-l: 0.3rem;
+    --border-radius-xl: 0.4rem;
+    --border-radius-xxl: 0.5rem;
+}
+
+body {
+    background-color: var(--bg-primary-color);
+}

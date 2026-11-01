@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--font-primary-color);
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, system-ui;
+    background-color: var(--bg-primary-color);
+    color: var(--font-primary-color);
+}
+
+html,
+body {
+    width: 100%;
+    background-color: var(--bg-primary-color);
+}
+
+main {
+    width: 100%;
+}
+
+main section {
+    width: 100%;
+    padding: var(--padding-xxl);
+    display: flex;
+    gap: var(--gutter-l);
+}
+
+main section .top {
+    display: flex;
+    align-items: center;
+    gap: var(--gutter-m);
+}
+
+.btn {
+    padding: var(--padding-s) var(--padding-l);
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius-m);
+    cursor: pointer;
+    color: var(--text-active-color);
+}
+
+#choose-img {
+    background-color: #4b4dcd;
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.25);
+    transition: all 0.2s ease;
+}
+
+#choose-img:hover {
+    background-color: #4f46e5;
+    box-shadow: 0 6px 12px -2px rgba(79, 70, 229, 0.4);
+}
+
+#choose-img:active {
+    transform: scale(0.97);
+}
+
+#reset-btn {
+    background-color: var(--bg-danger-color);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease, opacity 0.2s ease;
+}
+
+#reset-btn:hover {
+    opacity: 0.9;
+    filter: brightness(1.1);
+}
+
+#reset-btn:active {
+    transform: scale(0.97);
+}
+
+#download-btn {
+    background-color: var(--bg-success-color);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease, opacity 0.2s ease;
+}
+
+#download-btn:hover {
+    opacity: 0.9;
+    filter: brightness(1.1);
+}
+
+#download-btn:active {
+    transform: scale(0.97);
+}
+
+main section .left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--gutter-l);
+    width: 70%;
+}
+
+main section .bottom {
+    background-color: var(--bg-secondary-color);
+    width: 100%;
+    padding: var(--padding-xxl);
+    aspect-ratio: 5/3;
+    border-radius: var(--border-radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section .bottom .placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    font-size: 3rem;
+}
+
+main section .bottom .placeholder p {
+    font-size: 1rem;
+}
+
+main section .right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-s);
+    padding: var(--padding-m);
+    background-color: var(--bg-secondary-color);
+    border-radius: var(--border-radius-m);
+}
+
+main section right .filters {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-m);
+}
+
+main section .right .filter {
+    width: 100%;
+}
+
+main section .right .filter input {
+    width: 100%;
+    outline: none;
+    appearance: none;
+}
+
+main section .right .filter input::-webkit-slider-runnable-track {
+    background-color: var(--bg-active-color);
+    height: 3px;
+    border-radius: 2px;
+}
+
+main section .right .filter input::-webkit-slider-thumb {
+    cursor: pointer;
+    appearance: none;
+    background-color: rgb(186, 14, 14);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-top: -6.8px;
+}
+
+canvas {
+    max-width: 90%;
+    max-height: 80vh;
+}
+
+.presets-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.preset-btn {
+    background-color: #334155;
+    color: #f8fafc;
+    border: 1px solid #475569;
+    padding: 8px 14px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.preset-btn:hover {
+    background-color: #475569;
+    border-color: #64748b;
+    transform: translateY(-1px);
+}
+
+.preset-btn:active {
+    transform: scale(0.96);
+}
+
+/* Optional: Style for when a preset is currently active/selected */
+.preset-btn.active {
+    background-color: #6366f1;
+    border-color: #818cf8;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.4);
+}
